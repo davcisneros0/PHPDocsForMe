@@ -11,24 +11,48 @@
             [
                 'name' => 'HELLO',
                 'author' => 'John Doe',
+                'releaseYear' => 2000,
                 'purchaseUrl' => 'https:www.com'
             ],
             [
                 'name' => 'WORLD',
                 'author' => 'Johnny Doe',
+                'releaseYear' => 2001,
+                'purchaseUrl' => 'https:www.com'
+            ],
+            [
+                'name' => 'ALIENS',
+                'author' => 'Johnny Doe',
+                'releaseYear' => 2015,
                 'purchaseUrl' => 'https:www.com'
             ]
         ];
+
+        function filterByAuthor($books, $author) {
+            $filteredBooks = [];
+
+            foreach ($books as $book) {
+                if ($book['author'] === $author) {
+                    $filteredBooks[] = $book;
+                }
+            }
+
+            return $filteredBooks;
+        }
     ?>
     <ul>
-        <?php foreach ($books as $book) : ?> 
+        <?php foreach (filterByAuthor($books, 'Johnny Doe') as $book) : ?> 
+            <?php if ($book['author'] === 'Johnny Doe') : ?>
             <li>
                 <a href="<?= $book['purchaseUrl'] ?>">
-                <?= $book['name'] ?> 
+                <?= $book['name'] ?> (<?= $book['releaseYear'] ?>) - By <?= $book['author']; ?>
                 </a>
             </li>
+            <?php endif; ?>
         <?php endforeach ?>
 
     </ul>
+
+
 </body>
 </html>
