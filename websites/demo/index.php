@@ -7,21 +7,28 @@
 </head>
 <body>
     <?php
-        $numbers = [
-            "1",
-            "2",
-            "3"
+        $books = [
+            [
+                'name' => 'HELLO',
+                'author' => 'John Doe',
+                'purchaseUrl' => 'https:www.com'
+            ],
+            [
+                'name' => 'WORLD',
+                'author' => 'Johnny Doe',
+                'purchaseUrl' => 'https:www.com'
+            ]
         ];
     ?>
     <ul>
-        <!-- <?php foreach ($numbers as $number) {
-            echo "<li>{$number}</li>";
-        }    
-        ?> -->
-
-        <?php foreach ($numbers as $number) : ?>
-            <li><?php echo $number; ?></li>
+        <?php foreach ($books as $book) : ?> 
+            <li>
+                <a href="<?= $book['purchaseUrl'] ?>">
+                <?= $book['name'] ?> 
+                </a>
+            </li>
         <?php endforeach ?>
+
     </ul>
 </body>
 </html>
