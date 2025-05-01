@@ -27,3 +27,7 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
     - Part of the application that is responsible for presenting data or the user
     - Typically an HTML file or template
     - Part of the MWC architecture
+
+# Partials
+    - Reusable pieces of code or templates that can be included in other files
+    - Used for headers, footers, nav menus, or any section of a web page that is repeated across multiple pages
