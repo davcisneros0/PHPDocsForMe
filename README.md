@@ -21,3 +21,9 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
         - array, an array to filter over
         - callback, the callback function to use or an annoymous function
         - mode, flag determining what arguments are sent to the callback
+
+
+# Views
+    - Part of the application that is responsible for presenting data or the user
+    - Typically an HTML file or template
+    - Part of the MWC architecture
