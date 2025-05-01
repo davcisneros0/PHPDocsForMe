@@ -14,3 +14,10 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
 - Default parameters can be done with functions, such as function setHeight($minheight = 50) {}
 - To accept an UNKNOWN number of arguments in a function, you can use the ... operatora
     - It must be the LAST argument 
+
+# Lambda Functions
+- array_filter: filter elements of an array using a callback function
+    - array_filter(array $array, ?callable $callback = null, int $mode = 0): array
+        - array, an array to filter over
+        - callback, the callback function to use or an annoymous function
+        - mode, flag determining what arguments are sent to the callback
