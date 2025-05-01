@@ -7,18 +7,7 @@
 </head>
 <body>
     
-    <ul>
-        <?php foreach ($filteredBooks as $book) : ?> 
-            <?php if ($book['author'] === 'John Doe') : ?>
-            <li>
-                <a href="<?= $book['purchaseUrl'] ?>">
-                <?= $book['name'] ?> (<?= $book['releaseYear'] ?>) - By <?= $book['author']; ?>
-                </a>
-            </li>
-            <?php endif; ?>
-        <?php endforeach ?>
 
-    </ul>
 
 
 </body>
