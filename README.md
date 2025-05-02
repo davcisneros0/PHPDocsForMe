@@ -31,3 +31,7 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
 # Partials
     - Reusable pieces of code or templates that can be included in other files
     - Used for headers, footers, nav menus, or any section of a web page that is repeated across multiple pages
+
+# Superglobals
+    - built-in global arrays that provide access to various types of data 
+    - $_GET, $_POST, $_REQUEST, $_SESSION, $_COOKIE, $_FILES, $_SERVER
