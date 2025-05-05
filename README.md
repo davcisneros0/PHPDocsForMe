@@ -35,3 +35,7 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
 # Superglobals
     - built-in global arrays that provide access to various types of data 
     - $_GET, $_POST, $_REQUEST, $_SESSION, $_COOKIE, $_FILES, $_SERVER
+
+# Routers
+    - If user encounters a page that does not exist, we can handle it using a status code / ERROR 404 page
+        
