@@ -39,3 +39,7 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
 # Routers
     - If user encounters a page that does not exist, we can handle it using a status code / ERROR 404 page
         
+# PDO
+    - PHP Data Objects 
+    - USE TRY/CATCHH TO CONNECT TO SQLITE DATABASE
+        - USE A PDO, PREPARE, EXECUTE, FETCH ALL
