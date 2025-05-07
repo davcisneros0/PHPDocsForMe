@@ -43,3 +43,12 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
     - PHP Data Objects 
     - USE TRY/CATCHH TO CONNECT TO SQLITE DATABASE
         - USE A PDO, PREPARE, EXECUTE, FETCH ALL
+
+# SQL Injections
+    - One way to prevent: PREPARED statements with parameterized queries
+        - Separate SQL logic from the data
+            - $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+              $stmt->execute(['username' => $username]);
+              
+    - Another way to prevent: input validation or sanitizing input
+        - Using regex or using htmlspecialchars() 

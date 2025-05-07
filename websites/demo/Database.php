@@ -8,21 +8,14 @@ class Database {
     public function __construct() 
     {
         $this->connection = new PDO("sqlite:demo.db"); 
-        // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
-    public function query($query) {
-        try {
-            // $pdo = new PDO("sqlite:{$db}"); 
-            // $pdo = new PDO("sqlite:demo.db"); 
-            // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
+    public function query($query, $params = []) {
+        try {        
             $statement = $this->connection->prepare($query);
-            $statement->execute();
+            $statement->execute($params);
 
             return $statement;
-        
-            // return $statement->fetch(PDO::FETCH_ASSOC);
         
         } catch (PDOException $e) {
             echo "Error via database: " . $e->getMessage();
