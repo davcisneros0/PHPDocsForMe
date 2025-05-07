@@ -49,6 +49,6 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
         - Separate SQL logic from the data
             - $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
               $stmt->execute(['username' => $username]);
-              
+
     - Another way to prevent: input validation or sanitizing input
         - Using regex or using htmlspecialchars() 
