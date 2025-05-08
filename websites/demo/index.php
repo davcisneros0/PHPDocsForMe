@@ -1,8 +1,9 @@
 <?php
 
 require 'functions.php';
-require 'router.php';
 require 'Database.php';
+require 'router.php';
+
 
 
 
@@ -10,15 +11,15 @@ require 'Database.php';
 
 $dbb = new Database();
 
-$id = $_GET['id'];
-$query = "select * from posts WHERE id = :id";
+// $id = $_GET['id'];
+// $query = "select * from posts WHERE id = :id";
 
-dd($query);
+// dd($query);
 
-$posts = $dbb->query($query, [':id' => $id])->fetch();
+// $posts = $dbb->query($query, [':id' => $id])->fetch();
 
 
-dd($posts);
+// dd($posts);
 
 
 // foreach ($posts as $post) {
