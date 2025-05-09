@@ -52,3 +52,6 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
 
     - Another way to prevent: input validation or sanitizing input
         - Using regex or using htmlspecialchars() 
+
+# Authorizations
+    - 
