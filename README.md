@@ -53,5 +53,9 @@ relearning PHP, just adding all my notes and stuff I have learned on here.
     - Another way to prevent: input validation or sanitizing input
         - Using regex or using htmlspecialchars() 
 
-# Authorizations
-    - 
+# Pure Function
+    - function that is not dependent on state or values from outside of the function
+    - if it always returns the same result for same argument values
+    - no side effects like modifying arguments or outputting something
+    - only result is a return value
+    - Can be static, and a new instance will not need to be created
