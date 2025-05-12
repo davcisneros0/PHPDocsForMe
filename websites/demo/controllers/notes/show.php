@@ -19,4 +19,4 @@ if ($note['user_id'] != $currentUserId) {
 }
 
 
-require "views/note.view.php"; 
+require "views/notes/show.view.php"; 
